@@ -3,6 +3,7 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
+<<<<<<< HEAD
     var numeroUno;
     var numeroDos;
     var resultado;
@@ -18,5 +19,9 @@ function sumar()
     alert("La suma es" + resultado);
     
 
+=======
+sasdasdsdasdasafdsfsdf
+>>>>>>> 66a2d1e44f65b33d508d2345537fbb277927218d
 }
 
+sdfsdfssdffds
