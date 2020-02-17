@@ -9,6 +9,16 @@ se debe informar si el resultado es el correcto o no.
 var respuesta;
 function comenzar()
 {
+    var numero;
+    var operador;
+    var SegundoNumero;
+
+     numero = document.getElementById("PrimerNumero").value;
+     operador = document.getElementById("Operador").value;
+     SegundoNumero = document.getElementById("SegundoNumero").value;
+     respuesta  = document.getElementById("Respuesta").value;
+
+     numero = Math.floor(Math.random() * (11 - 1 )) + 1;
 
 	
 

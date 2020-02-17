@@ -14,13 +14,31 @@ function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 
-		//alert(numeroSecreto );
-	
+    //alert(numeroSecreto );
+    
+  numeroSecreto = document.getElementById("numero").value;
+  ContadorIntentos = document.getElementById("intentos").value;
 
-}
+  var min;
+  var max;
+  min = 1
+  max = 101
+  
+  numeroSecreto = Math.floor(Math.random() * (max - min)) + min;
+ 
 
+  if (numero < numero ) {
+    alert(numero + "falta")
+  } else {
+    if (numero > numero ){
+      alert(numero + "se paso")
+    } else {
+      alert(numero + "usted es un ganador")
+  
+    }
+    
+  }
+  
+
+  
 function verificar()
-{
-	
-	
-}
