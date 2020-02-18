@@ -8,22 +8,32 @@ var eleccionMaquina;
 
 function comenzar()
 {
-	
+    eleccionMaquina = Math.floor(Math.random() * (4 - 1) + 1)
+    console.log(eleccionMaquina);
 
 
 }//FIN DE LA FUNCIÓN
 function piedra()
-{
+{ 
+    if (eleccionMaquina == 1) {
+        alert("empate")
+    } else {
+        if (eleccionMaquina == 2){
+            alert("pierde")
+        } else {
+            alert("gana")
+        }
+    }
 	
 
 }//FIN DE LA FUNCIÓN
 function papel()
-{
+{ comenzar()
 
 
 }//FIN DE LA FUNCIÓN
 function tijera()
-{
+{comenzar()
 	
 
 }//FIN DE LA FUNCIÓN
