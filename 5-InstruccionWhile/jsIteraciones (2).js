@@ -1,12 +1,10 @@
 function mostrar()
 {
-	var contador;
-	var cantidad;
-	cantidad = 10;
-	while(cantidad > 1) {
-		cantidad = cantidad + 1;
-		contador = cantidad;
-		console.log(contador)
+	var contador = 0
+	while(contador < 10) {
+		contador ++;
+		console.log(11 - contador);
+
 	}
 
 	
