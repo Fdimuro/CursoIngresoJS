@@ -1,14 +1,11 @@
 function mostrar()
 {
+    var clave = prompt("pedir la clave");
+    clave = clave.toLowerCase();
 
-var clave = prompt("ingrese el número clave.");
+    while(clave != "utn750") {
+        alert("incorrecto");
 
-while(clave == "utn750") {
-    console.log(clave)
-    clave = clave.Tolowercase();
-
- }
-
-
+    }
 
 }//FIN DE LA FUNCIÓN

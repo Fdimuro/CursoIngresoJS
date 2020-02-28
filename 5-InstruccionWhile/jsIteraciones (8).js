@@ -13,7 +13,6 @@ function mostrar()
 	while(respuesta) {
 		numero = prompt("ingrese un numero");
 		numero = parseInt(numero);	
-	} 
 		while(isNaN(numero)) {
 		 numero = prompt("error");
 	     numero = parseInt(numero);
@@ -21,10 +20,15 @@ function mostrar()
 	if (numero <= 0) {
 		positivo + positivo
 	} else {
-		negativo * negativos;
+		negativo * negativo;
+		}
+
+respuesta= confirm("desea continuar");
+
+}
+document.getElementById('suma').value= positivo;
+document.getElementById('producto').value= negativo;
 
 
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
 
 }//FIN DE LA FUNCIÓN

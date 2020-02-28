@@ -13,27 +13,28 @@ function mostrar()
 	while(respuesta) {
 		numero = prompt("ingrese un numero");
 		numero = parseInt(numero);	
-		}
 	    
 		 while(isNaN(numero)) {
 	 	 numero = prompt("ingrese un numero");
 	     numero = parseInt(numero);
 		
-	} 
-			if (primeraVez){
-				primeraVez = false;
-				maximo = numero; 
-				minimo = numero;
-			} else if (numero > maximo) {
-		  	maximo = numero;
-				}
-				if (numero < minimo) {
-					minimo = numero;
-			
-				}
+	} if (primeraVez){
+		primeraVez = false;
+		maximo = numero; 
+		minimo = numero;
+	} else if (numero > maximo) {
+	  maximo = numero;
+		}
+		if (numero < minimo) {
+			minimo = numero;
+	
 
-	 respuesta = prompt("ingrese si para continuar")
-	}
+			respuesta = prompt("ingrese si para continuar")
+		}
+		
+		}
+			
+	
 	document.getElementById("maximo").value = max
 	document.getElementById("minimo").value = min
 
