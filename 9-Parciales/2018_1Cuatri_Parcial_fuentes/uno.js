@@ -3,23 +3,26 @@ function mostrar()
 {
     var ancho;
     var largo;
-    var numero;
-    var resultado;
+    var perimetro;
+    var rectangulo;
 
-    ancho = parseInt(ancho);
-    largo = parseInt(largo);
     ancho = prompt("ingrese el ancho");
     largo = prompt("ingrese el largo");
-    resultado = (largo * 2) + (ancho * 2)
-
-    if (largo > 0 && ancho > 0 ) {
-       alert("el perimetro es" + resultado)
-    } else {
-        alert("ingrese numeros positivos");
-    }
-
-
-}
     
+    
+
+    while(largo > 0 && ancho > 0) {
+        ancho = parseInt(ancho);
+        largo = parseInt(largo);
+        perimetro = (largo + largo) + (ancho + ancho);
+        
+    while(isNaN(perimetro)) {
+        alert("error")
+        perimetro = parseInt(perimetro);
+    }
+    alert("el perimetro es " + perimetro);
+    break;
+} console.log(perimetro)
+}
 
     

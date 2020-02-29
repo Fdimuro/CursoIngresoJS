@@ -1,21 +1,34 @@
 function mostrar()
 {
-    var precio;
-    var porcentaje;
+    var preciodescuento;
+    var porcentajedescuento;
     var preciofinal;
-    preciofinal = document.getElementById("elPrecioFinal").value;
 
-    precioDescuento = prompt("ingrese el precioDescuento")
-    porcentaje = prompt("ingrese el porcentaje")
-   
-    while(precio > 0 && porcentaje > 0 && isNaN(preciofinal)) {
-    precio = parseInt(precio);
-    porcentaje = parseInt(porcentaje);
-    preciofinal = parseInt(preciofinal)
-     preciofinal = precio % porcentaje;
-          
+    preciodescuento = prompt("indicar el precio de descuento");
+    porcentajedescuento = prompt("indicar el porcentaje de descuento");
+    preciodescuento = parseInt(preciodescuento);
+    porcentajedescuento = parseInt(porcentajedescuento);
 
-     }
+    while(isNaN(preciodescuento) && isNaN(porcentajedescuento)){
+        alert("error")
+        break;
+        
+    }
+    console.log(preciodescuento)
+        console.log(porcentajedescuento)
 
-    } 
+    preciofinal = porcentajedescuento  % preciodescuento;
 
+    document.getElementById("elPrecioFinal").value = preciofinal;
+
+
+
+
+    
+
+
+
+
+
+
+}
