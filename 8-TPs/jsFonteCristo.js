@@ -68,6 +68,8 @@ while (contador <= 100) {
 console.log("cantidad de divisibles " + cantidaddivisibles)
 }
 function VerificarPrimo() {
+    ComenzarIngreso() ;
+    
 
 }
 function NumerosPrimos() {
