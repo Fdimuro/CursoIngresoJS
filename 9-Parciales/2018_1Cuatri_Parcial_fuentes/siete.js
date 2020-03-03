@@ -11,36 +11,56 @@ function mostrar()
     var min;
     var cantidad =  0;
     var notamasbaja;
+    var minimosexo;
 
     
     while(contador <5) {
+    
         contador ++;
-        notas = prompt("ingrese la nota");
-        sexo = prompt("ingrese si es f o m ");
 
-        while (notas < 0 || notas > 10 || isNaN(notas)) {
-            notas = alert("error ingrese una nota valida"); 
-            break;
-        } if (sexo != "f" && sexo != "m") {
-            sexo = alert("error ingrese un sexo valido")
-            break;
-        } else if (primeraVez) {
-            primeraVez = false
-            max = notas;
-            notasmasbaja = notas;
-        } else if (notas < min ) {
-            notamasbaja = notas;
-        } else if (sexo == "m" && notas <= 6) {
+        do {
+         notas = prompt("ingrese la nota");
+       
+        notas = parseInt(notas);
+
+        } while (notas < 0 || notas > 10 || isNaN(notas)) 
+             do {
+                 sexo = prompt("ingrese si es f o m ");
+                  
+                  } while (sexo != "f" && sexo != "m") 
+            
+            //punto a acumulador;
+          acumulador += notas;
+          //punto minimo;
+
+          if (contador == 1) {
+              min = notas;
+              minimosexo = sexo;
+          } else if (nota < min) {
+              min = notas;
+
+          }  if (sexo == "m" && notas <= 6) {
             contadorvarones ++;
         }
-        acumulador += notas;
-    }  
-    alert("el promedio es" + contador/acumulador);
-    alert("cantidad de varones que se sacaron 6 o mas " + contadorvarones );
-    alert("la nota mas baja es" + notamasbaja);
+        
+        }
+
+        promedio = acumulador/contador;
+
+            alert("el promedio es" + promedio);
+             alert("minimo " + minimonota + "sexo minimo" + contadorvarones );
+              alert("la nota mas baja es" + notamasbaja);
+
+              
+              }
+ 
+            
+            
+            
+            
  
 
     
 
 
-}
+

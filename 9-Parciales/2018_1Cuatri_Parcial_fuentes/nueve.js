@@ -41,7 +41,11 @@ function mostrar()
             pesominimo = peso;
         } else if (peso < pesomaximo) {
             pesosomaximo = peso;
-        } 
+        }  
 
+
+        respuesta = confirm("desea continuar");
+
+}
 
 }
