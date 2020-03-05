@@ -102,6 +102,7 @@ do {
 } while (respuesta);
 
 //promediomujeres 
+
 if(contadormujeresurbanonacional > 0) {
     promediomujeres = acumuladormujeres / contadormujeres;
     } else {

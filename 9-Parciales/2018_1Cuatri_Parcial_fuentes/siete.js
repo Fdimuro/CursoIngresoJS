@@ -2,57 +2,50 @@ function mostrar()
 {
     var notas;
     var sexo;
-    var contador = 0;
-    var promedio;
-    var acumulador = 0;
-    var contadorvarones = 0;
-    var primeraVez = false;
-    var max;
+    var contadoralumnos = 0;
     var min;
-    var cantidad =  0;
-    var notamasbaja;
-    var minimosexo;
+    var max;
+    var sexomin;
+    var contadorvarones = 0;
+    var promedionotas;
+    var acumulador;
 
-    
-    while(contador <5) {
-    
-        contador ++;
+    while (contadoralumnos <5) {
+        contadoralumnos ++;
 
         do {
-         notas = prompt("ingrese la nota");
-       
-        notas = parseInt(notas);
+            sexo = prompt("ingrese un sexo");
+        } while(sexo != "f" && sexo != "m");
 
-        } while (notas < 0 || notas > 10 || isNaN(notas)) 
-             do {
-                 sexo = prompt("ingrese si es f o m ");
-                  
-                  } while (sexo != "f" && sexo != "m") 
-            
-            //punto a acumulador;
-          acumulador += notas;
-          //punto minimo;
 
-          if (contador == 1) {
-              min = notas;
-              minimosexo = sexo;
-          } else if (nota < min) {
-              min = notas;
+        do {
+            notas = prompt("ingrese una nota valida");
+            notas  = parseInt(notas)
+        } while(notas < 0 || notas > 10 || isNaN(notas));
 
-          }  if (sexo == "m" && notas <= 6) {
+
+        acumulador += notas;
+
+        if(contador = 1) {
+            min = notas;
+            sexomin = sexo;
+        } else if (min < notas) {
+            min = notas;
+            sexomin = sexo;
+        }
+
+        if (sexo == "m" && notas >= 6) {
             contadorvarones ++;
         }
-        
-        }
 
-        promedio = acumulador/contador;
+    }
+     promedionotas = acumulador /contadoralumnos;
 
-            alert("el promedio es" + promedio);
-             alert("minimo " + minimonota + "sexo minimo" + contadorvarones );
-              alert("la nota mas baja es" + notamasbaja);
-
-              
-              }
+     document.write("El promedio de las notas totales = " + promedionotas + "<br >");
+     document.write("la nota más baja = " + min + "sexo = " + sexomin + "<br >");
+     document.write("La cantidad de varones que su nota haya sido mayor o igual a 6. " + contadorvarones + "<br >");
+}
+ 
  
             
             
